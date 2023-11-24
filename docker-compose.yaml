@@ -5,7 +5,7 @@ services:
         build:
             context: .
             dockerfile: ./Dockerfile
-        command: python main7.py
+        command: python news7.py
         restart: unless-stopped
 
         volumes:
