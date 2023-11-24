@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+    tele:
+        build:
+            context: .
+            dockerfile: ./Dockerfile
+        command: python main7.py
+        restart: unless-stopped
+
+        volumes:
+            - ./src:/src
